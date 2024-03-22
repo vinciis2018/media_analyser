@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Comparison Results</title>
+</head>
+<body>
+    <h1>Video Comparison Results</h1>
+    <h2>Video 1:</h2>
+    <p>Format: {{ video1.format }}</p>
+    <p>Codec: {{ video1.codec }}</p>
+    <p>Bitrate: {{ video1.bitrate }}</p>
+    <p>FPS: {{ video1.fps }}</p>
+    <p>Audio Codec: {{ video1.audio_codec }}</p>
+
+    <h2>Video 2 (Converted):</h2>
+    <p>Format: {{ video2.format }}</p>
+    <p>Codec: {{ video2.codec }}</p>
+    <p>Bitrate: {{ video2.bitrate }}</p>
+    <p>FPS: {{ video2.fps }}</p>
+    <p>Audio Codec: {{ video2.audio_codec }}</p>
+
+    <br>
+    <a href="{{ url_for('index') }}">Upload More Videos</a>
+</body>
+</html>
